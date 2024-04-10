@@ -1,7 +1,9 @@
 # from altair.vegalite.v4.schema.channels import Opacity
 import dash
-import dash_html_components as html
-import dash_core_components as dcc
+#import dash_html_components as html
+from dash import html
+#import dash_core_components as dcc
+from dash import dcc
 from dash.dependencies import Input, Output
 import altair as alt
 import pandas as pd
@@ -278,7 +280,7 @@ app.layout = dbc.Container(
                         html.Footer(
                             [
                                 dcc.Markdown(
-                                    f"*This Employee Attrition Dashboard was designed by the UBC MDS 2020/2021 Cohort(Group 14). Our team includes Anita Li, Cheuk Ho, Hazel Jiang, and Ivy Zhang. You can find the source data in our [project GitHub](https://github.com/UBC-MDS/532_Dashboard_Project_Group_14/blob/main/data/Processed/HR_employee_Attrition_editted.csv) derived from a [Kaggle dataset](https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset) with Open Database License with permission. Last time update on {{{datetime.datetime.now().date()}}}.*"
+      
                                 ),
                             ]
                         ),
